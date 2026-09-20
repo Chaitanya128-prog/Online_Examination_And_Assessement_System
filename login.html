@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Online Examination System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="login-box">
+    <h1>ExamDesk</h1>
+    <p class="sub">Login to continue</p>
+
+    <form action="dashboard.html">
+      <fieldset>
+        <legend>Login Form</legend>
+        <br>
+
+        <label for="role">Select Role</label>
+        <select name="role" id="role" title="Select Student or Examiner">
+          <option value="student">Student</option>
+          <option value="examiner">Examiner</option>
+        </select>
+        <br><br>
+
+        <label for="roll">University Roll No</label>
+        <input type="text" id="roll" name="roll" placeholder="Enter University Roll No" title="Enter your 10 digit University Roll No" required>
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" title="Password is case sensitive" required>
+        <br><br>
+
+        <div class="form-btns">
+          <input type="submit" value="Login">
+          <input type="reset" value="Reset">
+        </div>
+      </fieldset>
+    </form>
+    <br>
+    <p><a href="index.html" title="Back to Home page">&larr; Back to Home</a></p>
+    <p><a href="dashboard.html" title="Back to Home page">&larr; Guest Login</a></p>
+  </div>
+
+</body>
+</html>
