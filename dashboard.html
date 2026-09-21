@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Online Examination System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <div class="sidebar">
+      <h2>ExamDesk</h2>
+
+      <a href="dashboard.html" title="Dashboard">Home</a>
+      <a href="exam.html" title="Attempt live exam">Live Exam</a>
+      <a href="result.html" title="See your result">Result</a>
+      <a href="#">Subject</a>
+      <a href="#">Support</a>
+      <a href="#">Settings</a>
+      <a href="login.html" title="Logout from ExamDesk">Logout</a>
+
+      <div class="profile">
+        <h3>Student</h3>
+        <p>B.Tech CSE</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <header class="header">
+        <h1>ONLINE EXAMINATION AND ASSESSMENT SYSTEM</h1>
+      </header>
+
+      <div class="main-content">
+        <h2>Welcome, Student</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>2</h3>
+            <p>Live Exams</p>
+          </div>
+          <div class="card">
+            <h3>3</h3>
+            <p>Upcoming Exams</p>
+          </div>
+          <div class="card">
+            <h3>5</h3>
+            <p>Completed Exams</p>
+          </div>
+          <div class="card">
+            <h3>78%</h3>
+            <p>Average Score</p>
+          </div>
+        </div>
+
+        <h2><span id="live" title="Exam is live now"></span> Live Exams</h2>
+
+        <div class="exam-box">
+          <p><strong>Web Technology - Unit Test 1</strong></p>
+          <p>Duration: 30 min | Questions: 20 | Marks: 20</p>
+          <a href="exam.html" class="btn" title="Click to start the exam">Start Exam</a>
+        </div>
+
+        <div class="exam-box">
+          <p><strong>Data Structures - Quiz 2</strong></p>
+          <p>Duration: 20 min | Questions: 15 | Marks: 15</p>
+          <a href="exam.html" class="btn" title="Click to start the exam">Start Exam</a>
+        </div>
+
+        <h2>Upcoming Exams</h2>
+        <table>
+          <tr>
+            <th>Exam</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>Operating System - Unit Test 1</td>
+            <td>22 Sep 2026</td>
+            <td>10:00 AM</td>
+            <td>30 min</td>
+          </tr>
+          <tr>
+            <td>DBMS - Quiz 1</td>
+            <td>24 Sep 2026</td>
+            <td>02:00 PM</td>
+            <td>20 min</td>
+          </tr>
+          <tr>
+            <td>Computer Networks - Quiz 1</td>
+            <td>26 Sep 2026</td>
+            <td>11:00 AM</td>
+            <td>20 min</td>
+          </tr>
+        </table>
+
+        <h2>Recent Results</h2>
+        <table>
+          <tr>
+            <th>Exam</th>
+            <th>Score</th>
+            <th>Percentage</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>HTML Basics - Quiz 1</td>
+            <td>16 / 20</td>
+            <td>80%</td>
+            <td class="pass">Pass</td>
+          </tr>
+          <tr>
+            <td>CSS Basics - Quiz 1</td>
+            <td>14 / 20</td>
+            <td>70%</td>
+            <td class="pass">Pass</td>
+          </tr>
+          <tr>
+            <td>Java - Unit Test 1</td>
+            <td>7 / 20</td>
+            <td>35%</td>
+            <td class="fail">Fail</td>
+          </tr>
+        </table>
+
+        <h2>Exam Instructions</h2>
+        <p>Watch this video before starting the exam.</p>
+        <br>
+      <iframe width="400" height="225" src="https://www.youtube.com/embed/8h12ccQgnVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <br><br>
+        <p>&quot;Please read all instructions carefully before starting the exam.&quot;</p>
+        <p>Marks &gt; 40% = Pass, Marks &lt; 40% = Fail</p>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 ExamDesk&trade; | All rights reserved &reg;</p>
+      </footer>
+    </div>
+
+  </div>
+
+</body>
+</html>
