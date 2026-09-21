@@ -282,66 +282,79 @@ footer {
   }
 }
 .login-box {
-  width: 380px;
-  margin: 80px auto;
+  width: 400px;
+  margin: 70px auto;
   background-color: white;
-  padding: 30px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 35px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(11, 42, 58, 0.12);
 }
 
 .login-box h1 {
   text-align: center;
+  color: var(--primary-color);
+  font-size: 2rem;
 }
 
 .login-box .sub {
   text-align: center;
-  color: gray;
-  margin-bottom: 20px;
+  color: var(--muted);
+  margin-bottom: 25px;
 }
 
 .login-box fieldset {
-  border: 1px solid #ccc;
-  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
 }
 
 .login-box legend {
-  padding: 0 5px;
+  padding: 0 8px;
   color: var(--primary-color);
+  font-weight: 600;
 }
 
 .login-box label {
   font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .login-box input,
 .login-box select {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #aaa;
-  border-radius: 3px;
+  padding: 11px 12px;
+  margin-top: 6px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #FAFBFD;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .login-box input:focus,
 .login-box select:focus {
   outline: none;
   border-color: var(--primary-color);
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(0, 159, 205, 0.18);
 }
 
 .form-btns {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .login-box input[type="submit"],
 .login-box input[type="reset"] {
   flex: 1;
-  padding: 10px;
+  padding: 11px;
   border: 2px solid var(--primary-color);
-  border-radius: 3px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.5s;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .login-box input[type="submit"] {
@@ -350,12 +363,13 @@ footer {
 }
 
 .login-box input[type="submit"]:hover {
-  background-color: #007ba0;
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
 }
 
 .login-box input[type="submit"]:active {
-  background-color: aqua;
-  color: black;
+  transform: translateY(0);
 }
 
 .login-box input[type="reset"] {
@@ -364,16 +378,24 @@ footer {
 }
 
 .login-box input[type="reset"]:hover {
-  background-color: #eee;
+  background-color: #EAF6FB;
 }
 
 .login-box a {
   color: var(--primary-color);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
   .login-box {
     width: 90%;
+    margin: 40px auto;
+    padding: 25px;
   }
 }
 .dashboard {
